@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9376d05bc1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div id="header">
+        <nav>
+          <p class="logo"><span>S</span>hane <span>S</span>trange.</p>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark menu" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+          <div class="header-text">
+            <h1>
+              Hello, I'm <span>Shane</span>! <br />An aspiring Software
+              Engineer.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/placeholder/profile-picture.jpg" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="subtitle">About Me</h1>
+              <p>
+                I am an aspiring Software Engineer with an academic background
+                in Law, keen to make a positive impact by programming technical
+                solutions with empathy.<br />
+                As a creative person, I enjoy using my imagination to design and
+                build functional web pages and I am excited to take this further
+                as I explore software.<br />
+                So far, I am self taught - driven to continue learning new
+                technologies and excited to start my career in the industry.
+              </p>
+              <div class="tabs">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Web Development</span><br />The ability to create
+                    accessible and responsive websites using Javascript, HTML,
+                    and CSS.
+                  </li>
+                  <li>
+                    <span>UI/UX</span><br />The ability to design websites that
+                    are user-friendly and optimised for performance.
+                  </li>
+                  <li>
+                    <span>Debugging</span><br />The ability to review code and
+                    analyse for errors that could potentially break the website
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>Personal Development</span><br />I have been teaching
+                    myself to code for 5+ hours a week since I graduated from
+                    university in 2022.
+                  </li>
+                  <li>
+                    <span>Traversy Media Coding Course (self-taught)</span
+                    ><br />A course compiled with around 50 hours of content
+                    including end of module challenges, FizzBuzz challenges, and
+                    build your own apps and websites challenges. Overall, an in
+                    depth break down of everything you should know about coding
+                    with Javascript, HTML and CSS.
+                  </li>
+                  <li>
+                    <span>BroCode Coding Course (self-taught)</span><br />A
+                    YouTube series designed for beginners to get an
+                    understanding of the industry and provide some basic
+                    challenges to learn HTML, CSS and Javascript.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Undergraduate</span><br />Bachelor of Laws with
+                    Honours in Law (2:2)
+                  </li>
+                  <li>
+                    <span>A-Levels</span><br />Fine Art, Sociology, Product
+                    Design
+                  </li>
+                  <li>
+                    <span>GCSE</span><br />7 A* - C including English, Maths and
+                    ICT
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="services">
+        <div class="container">
+          <h1 class="subtitle">My Skills</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Dev</h2>
+              <p>Designing and building functional web pages.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>Considering UX/UI best practices when designing web pages.</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-wrench"></i>
+              <h2>Debugging</h2>
+              <p>Finding and fixing errors and bugs to optimise code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="subtitle">Portfolio</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/placeholder//ecommerce.png" alt="" />
+              <div class="layer">
+                <h3>E-commerce Website</h3>
+                <p>
+                  Skate shop e-commerce website. This specific project was
+                  created to further develop my skills with Javascript.
+                </p>
+                <a
+                  href="https://shane-strange.github.io/E-commerce/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/placeholder/digiclock.png" alt="" />
+              <div class="layer">
+                <h3>Digital Clock</h3>
+                <p>
+                  Although a basic concept, this was one of my first ever
+                  Javascript projects and proved to be a good challenge when
+                  starting out.
+                </p>
+                <a
+                  href="https://shane-strange.github.io/Digital-Clock-/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/placeholder/todo.png" alt="" />
+              <div class="layer">
+                <h3>To-do List</h3>
+                <p>
+                  I enjoyed learning how to use local storage to complete this
+                  project and being creative with the retro design.
+                </p>
+                <a href="https://shane-strange.github.io/To-do/" target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="subtitle">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-paper-plane"></i> shanestrange99@gmail.com
+              </p>
+              <p><i class="fa-solid fa-square-phone"></i> 07842802910</p>
+              <div class="social-icons">
+                <a href="https://github.com/Shane-Strange" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/shane-strange"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <a
+                href="https://drive.google.com/file/d/19IaFLLuKChH31MH1dmihzIcqBc_i4WG0/view?usp=sharing"
+                target="_blank"
+                download
+                class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="contact-right">
+              <form action="" name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="* Your Name..."
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="* Your Email..."
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="* Your Message..."
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright &copy; Shane Strange 2024
+            <i class="fa-regular fa-face-smile"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
